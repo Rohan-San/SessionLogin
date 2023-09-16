@@ -1,7 +1,7 @@
 // express.js
 const express = require('express');
 const session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
+const MongoStore = require('connect-mongo')(new session);
 
 const app = express();
 
